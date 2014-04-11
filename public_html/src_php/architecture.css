@@ -1,0 +1,200 @@
+body
+{
+	margin:0;
+}
+
+img
+{
+	border:0;
+}
+
+a
+{
+	text-decoration:none;
+}
+a:hover
+{
+	text-decoration:none;
+}
+
+@font-face {
+    font-family: "SQUAREFONT";
+    src: url('Square.ttf');
+}
+@font-face {
+    font-family: "Prototype";
+    src: url('Prototype.ttf');
+}
+
+/*   Architecture    */ 
+/* TOP */
+
+
+div.container_absolute_top /* contient le conteneur fixed des top_barres */
+{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+div.barres_top /* contient les deux barres du haut */
+{
+	position : fixed ;
+	top:0;
+	width : 100%;
+	height:30px;
+	z-index:3;
+}
+
+div.barre_connexion /* la 1e barre : accueil, login... */
+{
+	background-color : #808080;
+	position : relative ;
+	width : 100%;
+	text-align : center;
+	height:30px;
+	line-height	:	30px;
+}
+
+
+div.barre_jeux
+{
+	background-color	:	#a7a7a7;
+	position : relative ;
+	width : 100%;
+	text-align	:	center; 
+	height:30px;
+	line-height	:	30px;
+}
+
+div.barres_top 	a
+{
+	text-decoration	:	none;
+	font-family	:	"SQUAREFONT";
+	font-size	:	18px;  
+	vertical-align:middle;
+}
+
+div.barres_top	a:hover
+{
+	text-decoration	:	underline;	
+}
+
+div.barre_jeux	a
+{
+	color : #000000;
+}
+div.barre_connexion	a
+{
+	color : #FFFFFF;
+}
+
+/* MID */
+
+div.page
+{
+	position : relative;
+	width : 1862px;
+	margin:auto;
+	margin-top:60px;
+	height : 1200px;
+}
+
+div.contentgauche
+{
+	float:left;
+	position : relative;
+	height : 100%;
+	width : 381px;
+	background-repeat:repeat;
+	box-shadow: -40px 0 40px -40px #a7a7a7 inset;
+}
+
+div.contentcentre
+{
+	float:left;
+	position : relative;
+	width:1100px;
+}
+
+div.contentdroite
+{
+	float:left;
+	position : relative;
+	width : 381px;
+	background-repeat:repeat;
+	height : 100%;
+	box-shadow: 40px 0 40px -40px #a7a7a7 inset;
+}
+
+/* MID MID */
+
+div.banniere
+{
+	position : relative;
+	width : 100%;
+}
+
+div.banniere_image
+{
+	text-align:center;
+}
+
+div.content
+{
+	position : relative;
+	width : 1000px;
+	margin:auto;
+	font-family	:	"Prototype";
+}
+
+div.menu
+{
+	width : 1000px;
+	height : 35px;
+	margin:auto;
+	border-bottom : 1px solid #808080;
+	border-top : 1px solid #808080;
+
+}
+
+
+div.menu a
+{
+	position	:	relative;
+    display		:	block; 
+	float 		:	left;
+	text-align	:	center; 
+	background	:	#a7a7a7;
+	margin-left	:	2px;
+	height 		: 	35px;
+	line-height	:	35px;
+	font-size	:	18px;
+	padding-left:10px;
+	padding-right:10px;
+	vertical-align:middle;
+	color		:	black;
+}
+
+div.menu a:hover
+{
+	background	:	#9d86b7;
+}
+
+/* BOT */ 
+
+div.foot
+{
+	position : fixed;
+	bottom : 0;
+	width : 100%;
+	background-color : maroon;
+	z-index:2;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,334 @@
+body
+{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+img
+{
+	border:0;
+}
+
+a
+{
+	text-decoration:none;
+}
+a:hover
+{
+	text-decoration:none;
+}
+
+@font-face {
+    font-family: "SQUAREFONT";
+    src: url('Square.ttf');
+}
+@font-face {
+    font-family: "Prototype";
+    src: url('Prototype.ttf');
+}
+
+/*   Architecture    */ 
+/* TOP */
+
+
+div.container_absolute_top /* contient le conteneur fixed des top_barres */
+{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+div.barres_top /* contient les deux barres du haut + la ban*/
+{
+	position : fixed ;
+	top:0;
+	width : 100%;
+	height:30px;
+	z-index:3;
+}
+
+div.barre_connexion /* la 1e barre : accueil, login... */
+{
+	background-color : #808080;
+	position : relative ;
+	width : 100%;
+	text-align : center;
+	height:30px;
+	line-height	:	30px;
+}
+
+div.banniere
+{
+	position : relative;
+	width : 100%;
+	height	:	100px;
+	background-color	:	white;
+}
+
+div.banniere_content
+{
+	position	:	relative;
+	width	:	60%;
+	margin	:	auto;
+	height	:	100%;
+	line-height	:	100%;
+}
+
+div.banniere_image
+{
+	float	:	left;
+	width	:	50%;
+	height	:	100%;
+	text-align:center;
+	background-image	:	url('../images/logo_agamek.png');
+	background-size:100% auto;
+	background-repeat	:	no-repeat;
+	background-position: center;
+}
+
+div.social
+{
+	float	:	left;
+	margin-left	:	2%;
+	width	:	5%;
+	height	:	100%;
+	text-align	:	center;
+}
+
+div.pub
+{
+	float	:	left;
+	margin-left	:	2%;
+	width	:	29%;
+	height	:	100%;
+	background-color	:	dimgray;
+}
+
+div.avatar
+{
+	float	:	left;
+	margin-left	:	2%;
+	width	:	10%;
+	height	:	100%;
+	background-image	:	url('../images/avatar.jpg');
+	background-size:100% auto;
+	background-repeat	:	no-repeat;
+	background-position: center;
+}
+
+div.avatar img
+{
+	width	:	auto;
+	height	:	100%;
+}
+
+div.barre_jeux
+{
+	background-color	:	#a7a7a7;
+	position : relative ;
+	width : 100%;
+	text-align	:	center; 
+	height:30px;
+	line-height	:	30px;
+}
+
+div.barres_top 	a
+{
+	text-decoration	:	none;
+	font-family	:	"SQUAREFONT";
+	font-size	:	1.125em;  
+	vertical-align:middle;
+	margin-left : 5px;
+	font-size: 16px;
+}
+
+div.barres_top	a:hover
+{
+	text-decoration	:	underline;	
+}
+
+div.barre_jeux	a
+{
+	color : #000000;
+}
+div.barre_connexion	a
+{
+	color : #FFFFFF;
+}
+
+/* MID */
+
+div.page
+{
+	position : relative;
+	width : 100%;/*1900px; /* taille de base, toutes les autres largeurs sont relatives à celle-ci */
+	margin:auto;
+	margin-top:160px; /* somme des hauteurs du top */
+	height : 2000px;
+}
+
+div.contentgauche
+{
+	float:left;
+	position : fixed;
+	height : 100%;
+	width : 20%;
+	background-repeat:no-repeat;
+	box-shadow: -40px 0 40px -40px #a7a7a7 inset;
+	background-size:100% auto;
+}
+
+div.contentcentre
+{
+	float:left;
+	position : absolute;
+	right:20%;
+	width	:	60%;
+}
+
+div.contentdroite
+{
+	float:left;
+	position : fixed;
+	right:0;
+	width : 20%;
+	background-repeat:no-repeat;
+	height : 100%;
+	box-shadow: 40px 0 40px -40px #a7a7a7 inset;
+	background-size:100% auto;
+}
+
+/* MID MID */
+
+div.content
+{
+	position : relative;
+	width : 100%;
+	margin:0;
+	font-family	:	"Prototype";
+}
+
+div.menu
+{
+	width : 60%;
+	height : 3%;
+	border-bottom : 1px solid #808080;
+	border-top : 1px solid #808080;
+	margin-bottom 	:	5px;
+	position	:	fixed;
+	background-color:white;
+	margin-bottom	:	3%;
+	z-index:1;
+}
+
+div.menu a
+{
+    display		:	block; 
+	float 		:	left;
+	text-align	:	center; 
+	background	:	#a7a7a7;
+	margin-right	:	0.2%;
+	height 		: 	100%;
+	line-height	:	150%;
+	padding-left:0.5%;
+	padding-right:0.5%;
+	vertical-align:middle;
+	color		:	black;
+	font-family	:	"SQUAREFONT";
+	font-size: 16px;
+}
+
+div.menu a:hover
+{
+	background	:	#9d86b7;
+}
+
+div.contenu
+{
+	position:relative;
+	padding-top:3%;
+	width:100%;
+	height:100%;
+	background-color:pink;
+	z-index:0;
+}
+
+
+/* BOT */ 
+
+div.foot
+{
+	position : fixed;
+	bottom : 0;
+	width : 100%;
+	background-color : maroon;
+	z-index:2;
+}
+
+/* MID : les trois colones */
+
+div.col_gauche
+{
+	position	:	relative;
+	float		:	left;
+	width		:	50%;
+	background-color : maroon;
+}
+
+div.col_centre
+{
+	position	:	relative;
+	float		:	left;
+	width		:	25%;
+	background-color : red;
+}
+
+div.col_droite
+{
+	position	:	relative;
+	float		:	left;
+	width		:	25%;
+	background-color : blue;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-height: 320px)
+{
+	div.barres_top 
+	{
+		position	:	relative;
+	}
+}
+/*
+@media screen and (max-width: 480px)
+{
+	div.page 
+	{
+		width	:	480px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+{
+	div.page 
+	{
+		width	:	768px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
+	div.page 
+	{
+		width	:	768px;
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 480px) 
+{
+
+
+}*/
+
+

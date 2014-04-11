@@ -1,0 +1,15 @@
+<?php
+echo 'ok';
+include_once ('../dota2-api-master/config.php');
+echo 'ok';
+$players_mapper_web = new players_mapper_web();
+echo 'ok';
+$players_info = $players_mapper_web->add_id('76561197971339843')->load();
+foreach($players_info as $player_info) {
+    echo $player_info->get('realname');
+    echo '<img src="'.$player_info->get('avatarfull').'" alt="'.$player_info->get('personaname').'" />';
+    echo '<a href="'.$player_info->get('profileurl').'">'.$player_info->get('personaname').'\'s steam profile</a>';
+}
+print_r($players_info);
+
+?>

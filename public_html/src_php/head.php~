@@ -1,0 +1,26 @@
+<?php
+	include_once('connexion.php');
+	?>
+
+<div class="TopBarre">
+	<div class="TopBarreButton"><a href="?page=accueil" class="menuprincipal">Accueil</a></div>
+	<div class="TopBarreButton"><a href="?page=dota" class="menuprincipal"><span class="plus"><img src="http://www.dota2.cz/files/playdota2_favicon.ico"></span> Dota2</a></div>
+	<div class="TopBarreButton"><a href="?page=dota" class="menuprincipal"><span class="plus"><img src="http://www.dota2.cz/files/playdota2_favicon.ico"></span> Dota2</a></div>
+	<div class="TopBarreButton"><a href="?page=dota" class="menuprincipal"><span class="plus"><img src="http://www.dota2.cz/files/playdota2_favicon.ico"></span> Dota2</a></div>
+	<div class="TopBarreButton"><a href="?page=dota" class="menuprincipal"><span class="plus"><img src="http://www.dota2.cz/files/playdota2_favicon.ico"></span> Dota2</a></div>
+	<div class="TopBarreButton"><a href="?page=dota" class="menuprincipal"><span class="plus"><img src="http://www.dota2.cz/files/playdota2_favicon.ico"></span> Dota2</a></div>
+	<div class="TopBarreButton"><a href="?page=dota" class="menuprincipal"><span class="plus"><img src="http://www.dota2.cz/files/playdota2_favicon.ico"></span> Starcraft2</a></div>
+
+</div>
+
+<div class="banniere">
+	<div class="banniereCentre">LeSiteDeLaMort.com</div>
+	
+	<div class="bannierePub1">
+		<img width="180px" src="http://www.gizmodo.fr/wp-content/uploads/2013/02/Logo-de-Steam.png">
+	</div>
+	
+	<div class="bannierePub2">
+		<img src="http://banques-assurances-mutuelles.fr/assurances/karim-benzema-elcl-pub.jpg" width="320px">
+	</div>
+</div>
